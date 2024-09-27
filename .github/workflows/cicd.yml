@@ -1,6 +1,6 @@
 name: CICD
 
-on: 
+on:
   push:
     branches: [ "main" ]
   pull_request:
@@ -15,7 +15,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: show directory
-      - run: |
+        run : |
           ls -a
       - name: test1
         run: |
@@ -26,4 +26,3 @@ jobs:
       - name: test3
         run: |
           echo "test3 출력"
-      
