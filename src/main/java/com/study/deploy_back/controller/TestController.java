@@ -12,9 +12,8 @@ public class TestController {
     @Value("${client.address}")
     private String clientAddress;
 
-    @CrossOrigin(originPatterns = "*")
     @GetMapping("/test")
     public ResponseEntity<?> test() {
-        return ResponseEntity.ok(clientAddress + "test");
+        return ResponseEntity.ok(clientAddress + "test!!!!!");
     }
 }
